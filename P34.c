@@ -22,12 +22,12 @@ int main(){
     scanf("%d",&num);
     int i;
     int c=0;
-    for(i=1;i<num;i++){
+    for(i=1;i<=num;i++){
         if(num%i==0){
             c++;
         }
     }
-    if(c==1){
+    if(c==2){
         printf("prime number");
     }
     else{
