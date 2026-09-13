@@ -18,18 +18,24 @@ Output 2:
 
 int main(){
     int num;
-    int x,pro=1;
-    printf("enter a number");
+    int pro=1;
+    int x,c;
+    printf("Enter a number: ");
     scanf("%d",&num);
-    while(num!=0){
-        x=num%10;
-        if(x%2==0){
-            pro=1;
-        }
-        else{
-            pro=pro*x;
-            num=num/10;
-        }
+    while(num>0){
+x=num%10;
+if(x%2!=0){
+    pro=pro*x;
     }
-    printf("product=%d",pro);
+    else{
+        c=1;
+    }
+    num=num/10;
+}
+if(c==1){
+    printf("%d",c);
+}
+else{
+printf("Product of odd digits: %d", pro);
+}
 }
