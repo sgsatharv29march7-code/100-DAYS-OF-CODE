@@ -28,6 +28,7 @@ int main(){
         }
         else{
             pro=pro*x;
+            num=num/10;
         }
     }
     printf("product=%d",pro);
