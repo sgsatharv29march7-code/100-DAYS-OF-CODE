@@ -2,5 +2,24 @@
 #include <stdio.h>
 
 int main(){
+    char ch;
+    printf("enter a character");
+    scanf("%c",&ch);
+    if(ch>='A' && ch<='Z'){
+        printf("character is uppercase alphabet %c",ch);
+    }
+    else{
+        if(ch>='a' && ch<='z'){
+            printf("character is lowercase alphabet %c",ch);
+        }
+        else{
+            if(ch>='0' && ch<='9'){
+                printf("character is digit %c",ch);
+            }
+            else{
+                printf("character is special character %c",ch);
+            }
+        }
+    }
     
 }
